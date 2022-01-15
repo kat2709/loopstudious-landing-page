@@ -167,86 +167,101 @@ body {
   font-weight: 200;
 }
 
-.photo_1 {
-  background-image: url(./images/desktop/image-deep-earth.jpg);
+.photo_box {
+  width: 257px;
+  height: 450px;
+  position: relative;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.photo{
   width: 257px;
   height: 450px;
   margin-bottom: 33px;
   display: flex;
   align-items: flex-end;
-  padding: 40px;
   box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
+  position: relative;
+}
+
+.photo_1 {
+  background-image: url(./images/desktop/image-deep-earth.jpg);
+}
+
+.cont_box {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  width: 257px;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.cont_box:hover {
+  color: black;
+}
+
+.cont_box:hover ~ .photo_1 {
+  opacity: 50%;
 }
 
 .photo_2 {
   background-image: url(./images/desktop/image-night-arcade.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_2 {
+  opacity: 50%;
+}
+
 .photo_3 {
   background-image: url(./images/desktop/image-soccer-team.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_3 {
+  opacity: 50%;
+}
+
 .photo_4 {
   background-image: url(./images/desktop/image-grid.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_4 {
+  opacity: 50%;
+}
+
 .photo_5 {
   background-image: url(./images/desktop/image-from-above.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_5 {
+  opacity: 50%;
+}
+
 .photo_6 {
   background-image: url(./images/desktop/image-pocket-borealis.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_6 {
+  opacity: 50%;
+}
+
 .photo_7 {
   background-image: url(./images/desktop/image-curiosity.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
 }
+
+.cont_box:hover ~ .photo_7 {
+  opacity: 50%;
+}
+
 .photo_8 {
   background-image: url(./images/desktop/image-fisheye.jpg);
-  width: 257px;
-  height: 450px;
-  margin-bottom: 33px;
-  display: flex;
-  align-items: flex-end;
-  padding: 40px;
-  box-shadow: -1px -76px 57px -41px rgba(34, 60, 80, 0.62) inset;
+}
+
+.cont_box:hover ~ .photo_8 {
+  opacity: 50%;
 }
 
 .section_4 {
@@ -276,12 +291,14 @@ body {
 
 .link img {
   margin-left: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .link img:hover {
   cursor: pointer;
-  border-bottom: rgb(255, 255, 255);
-  border-width: 2px;
+  border-bottom: 2px solid white;
+  margin-bottom: 0px;
 }
 
 .section_nav {
