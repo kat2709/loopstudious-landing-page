@@ -162,10 +162,10 @@ body {
     background-image: url(./images/mobile/image-interactive.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 50px;
+    margin: 50px auto;
   }
   .box_2 {
-    margin-top: 0;
+    margin: 0 auto;
     text-align: center;
     padding: 40px;
     max-width: 550px;
@@ -208,6 +208,7 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   border: solid;
+  border-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,15 +331,6 @@ body {
   opacity: 50%;
 }
 
-.section_4 {
-  width: 100%;
-  height: 161px;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  margin: 155px auto 0;
-  padding: 0 40px;
-}
-
 .see_all_mobile {
   display: none;
 }
@@ -371,10 +363,9 @@ body {
 
   .cont_box {
     width: 100%;
-    max-width: 245px;
+    padding-right: 60%;
     height: 170px;
     font-size: 32px;
-    padding: 30px;
   }
 
   .photo_1 {
@@ -392,7 +383,7 @@ body {
   .photo_3 {
     background-image: url(./images/mobile/image-soccer-team.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
   }
 
   .photo_4 {
@@ -416,7 +407,7 @@ body {
   .photo_7 {
     background-image: url(./images/mobile/image-curiosity.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
   }
 
   .photo_8 {
@@ -429,6 +420,15 @@ body {
     display: flex;
     margin: 40px auto;
   }
+}
+
+.section_4 {
+  width: 100%;
+  height: 161px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin: 155px auto 0;
+  padding: 0 40px;
 }
 
 .section_4_in {
@@ -500,5 +500,42 @@ body {
   font-weight: 700;
 }
 
+.mobile_footer {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
+  .section_4 {
+    display: none;
+  }
+
+  .mobile_footer {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 90px auto 0;
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo_2 {
+    margin-top: 50px;
+  }
+  .nav_2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav_link_2 {
+    margin-right: 0;
+  }
 }
