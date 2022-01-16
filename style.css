@@ -23,14 +23,40 @@ body {
   background-image: url(./images/desktop/image-hero.jpg);
   background-size: cover;
   color: rgb(255, 255, 255);
+  padding: 0 40px;
 }
 
 .head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1120px;
   margin: 64px auto 0;
+}
+
+.mobile_menu_btn {
+  display: none;
+  width: 40px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  .section_1 {
+    background-image: url(./images/mobile/image-hero.jpg);
+    width: 100%;
+  }
+  .nav {
+    display: none;
+  }
+
+  .mobile_menu_btn {
+    display: block;
+  }
+
+  .block p {
+    width: 100%;
+  }
 }
 
 .nav_link {
@@ -69,6 +95,13 @@ body {
   width: 630px;
   border: solid;
   padding: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  .block p {
+    width: 100%;
+    font-size: 46px;
+  }
 }
 
 .section_2 {
@@ -114,6 +147,38 @@ body {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 800px) {
+  .box_1,
+  .box_2 {
+    position: initial;
+    width: 100%;
+  }
+  .section_2 {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  .box_1 {
+    max-width: 730px;
+    background-image: url(./images/mobile/image-interactive.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+  }
+  .box_2 {
+    margin-top: 0;
+    text-align: center;
+    padding: 40px;
+    max-width: 550px;
+  }
+  .text_2 {
+    font-size: 32px;
+  }
+  .block p {
+    padding: 20px;
+    font-size: 30px;
+  }
+}
+
 .section_3 {
   height: 100%;
   width: 100%;
@@ -127,6 +192,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
 }
 
 .our {
@@ -175,7 +241,7 @@ body {
   margin-top: 30px;
 }
 
-.photo{
+.photo {
   width: 257px;
   height: 450px;
   margin-bottom: 33px;
@@ -270,6 +336,99 @@ body {
   background-color: black;
   color: rgb(255, 255, 255);
   margin: 155px auto 0;
+  padding: 0 40px;
+}
+
+.see_all_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    margin-top: 25px;
+  }
+  .our {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+  .see_all {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .photo_box,
+  .photo {
+    width: 100%;
+    max-width: 650px;
+    height: 170px;
+  }
+
+  .cont_box {
+    width: 100%;
+    max-width: 245px;
+    height: 170px;
+    font-size: 32px;
+    padding: 30px;
+  }
+
+  .photo_1 {
+    background-image: url(./images/mobile/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_2 {
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_3 {
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_4 {
+    background-image: url(./images/mobile/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_5 {
+    background-image: url(./images/mobile/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_6 {
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_7 {
+    background-image: url(./images/mobile/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photo_8 {
+    background-image: url(./images/mobile/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .see_all_mobile {
+    display: flex;
+    margin: 40px auto;
+  }
 }
 
 .section_4_in {
@@ -287,6 +446,7 @@ body {
   background-size: contain;
   width: 144px;
   height: 24px;
+  background-repeat: no-repeat;
 }
 
 .link img {
@@ -338,4 +498,7 @@ body {
   color: hsl(0, 0%, 55%);
   font-size: 12px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
 }
